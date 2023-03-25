@@ -168,4 +168,9 @@ export const ourServices = [
       "Copywriting & Editorial",
     ],
   },
+  {
+    id: "",
+    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Solid_white.svg/2048px-Solid_white.svg.png",
+    points: [],
+  },
 ];

@@ -82,9 +82,17 @@ h2 {
 .splide__arrow--next {
   right: 70px !important ;
 }
-
 .splide__arrow--prev {
   left: 70px !important ;
+}
+
+@media screen and (max-width: 768px) {
+  .splide__arrow--next {
+    right: 30px !important ;
+  }
+  .splide__arrow--prev {
+    left: 30px !important ;
+  }
 }
 
 .splide__splide {

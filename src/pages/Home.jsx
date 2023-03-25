@@ -17,12 +17,12 @@ export default function Home() {
       <div className="w-[100%] pt-0 sm:pt-[13rem]">
         <iframe
           src="https://player.vimeo.com/video/796346595?h=8a4686b5aa&controls=0&loop=1&background=1&app_id=122963"
-          className=" w-[100%] h-[100vh] sm:w-[100%] sm:h-[100vh]"
+          className=" w-[100%] h-[80vh]  sm:w-[100%] sm:h-[100vh]"
         ></iframe>
       </div>
 
       {/* h2 */}
-      <div className="md:h-[80vh] h-[60vh] flex items-center justify-center sm:pb-[7rem]">
+      <div className="md:h-[80vh] h-[60vh] flex items-center justify-center sm:pb-[7rem] pb-[4rem]">
         <h2 className={`${styles.heading2} `}>
           We build connected brand systems from vision through execution
         </h2>
@@ -51,7 +51,7 @@ export default function Home() {
 
       {/* section with pic */}
 
-      <div className="flex flex-col md:flex-row-reverse w-full items-center justify-center relative">
+      <div className="flex flex-col md:flex-row-reverse w-full items-center justify-center relative mb-[3rem] sm:mb-0">
         <div className={`${layout.sectionImg}`}>
           <img
             src="https://images.prismic.io/instrument-v5/7f8d8f97-e257-4abf-906c-ea7543da01e3_instrument-fast-co-award.png?auto=compress,format&w=1920&dpr=2"
@@ -69,7 +69,7 @@ export default function Home() {
         </div>
       </div>
       {/* h2 */}
-      <div className="md:h-[80vh] h-[60vh] flex flex-col items-center justify-center sm:pb-[7rem]">
+      <div className=" flex flex-col items-center justify-center sm:pb-[7rem] my-[8rem]">
         <h2 className={`${styles.heading2} `}>
           Explore some of our most recent work
         </h2>
@@ -79,7 +79,7 @@ export default function Home() {
       </div>
 
       {/* two-pics */}
-      <div className="flex md:flex-row flex-col gap-x-[4rem] gap-y-[6rem] sm:gap-y-0">
+      <div className="flex md:flex-row flex-col gap-x-[4rem] gap-y-[6rem] sm:gap-y-0 mb-10 sm:mb-0">
         {picsHome.map((pic) => (
           <div className="flex flex-col">
             <div className="flex">
@@ -103,42 +103,8 @@ export default function Home() {
           </div>
         ))}
       </div>
-      {/* socail media */}
-      {/* <div className="h-[80vh] w-full flex flex-row items-center justify-center">
-        <Splide
-          options={{
-            type: "loop",
-            gap: "10px",
-            drag: "free",
-            arrows: false,
-            pagination: false,
-            autoScroll: {
-              pauseOnHover: false,
-              pauseOnFocus: false,
-              rewind: false,
-              speed: 1,
-            },
-            direction: "ttb",
-            height: "100px",
-            width: "600px",
-          }}
-          extensions={{ AutoScroll }}
-        >
-          <SplideSlide>
-            <img
-              src="https://images.prismic.io/instrument-v5/40ccfd06-4af9-45e8-89ec-5117acdcb4bc_nike.png?auto=compress,format&w=640&dpr=2"
-              className="w-[200px] h-[200px]"
-            />
-          </SplideSlide>
-          <SplideSlide>
-            <img
-              src="https://images.prismic.io/instrument-v5/ff178b0b-7634-4c21-a0a0-87aa52eccc79_stumptown.png?auto=compress,format&w=640&dpr=2"
-              className="w-[200px] h-[200px]"
-            />
-          </SplideSlide>
-        </Splide>
-      </div> */}
-      <div className="md:h-[80vh] h-[60vh] flex flex-col items-center justify-center sm:pb-[7rem]">
+
+      <div className="flex flex-col items-center justify-center my-[10rem] sm:mb-[7rem]">
         <h2 className={`${styles.heading2} `}>
           We’d love to work with you and your team
         </h2>

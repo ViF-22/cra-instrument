@@ -22,6 +22,7 @@ import "@splidejs/react-splide/css/sea-green";
 // or only core styles
 import "@splidejs/react-splide/css/core";
 import OurServices from "../components/OurServices";
+import Carousel from "../components/Carousel";
 
 export default function WhatWeDo() {
   return (
@@ -85,8 +86,8 @@ export default function WhatWeDo() {
       </div>
       {/* carousel  - THINK HOW TO ADD SUBTITLE*/}
 
-      <div className=" relative mb-[5rem]">
-        <Splide
+      <Carousel />
+      {/* <Splide
           hasTrack={false}
           options={{
             type: "fade",
@@ -110,8 +111,8 @@ export default function WhatWeDo() {
               </SplideSlide>
             ))}
           </SplideTrack>
-        </Splide>
-      </div>
+        </Splide> */}
+
       {/* h2 */}
       <div
         className={`w-full flex items-center justify-center my-[6rem] sm:my-[10rem] ${styles.paddingX}`}
@@ -216,7 +217,7 @@ export default function WhatWeDo() {
       {/* h2 with btn */}
 
       <div
-        className={`flex flex-col items-center justify-center my-[5rem] ${styles.paddingX} `}
+        className={`flex flex-col items-center justify-center my-[7rem] sm:my-[5rem] ${styles.paddingX} `}
       >
         <h2 className="md:text-[2.7rem] sm:text-[2.3rem] text-[1.6rem] font-medium  text-center w-[80%] sm:w-[75%] md:w-[65%] mb-10">
           We’d love to work with you and your team
