@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { navLinks, navLinksMobile } from "../constants";
 import useScrollDirection from "../hooks/useScrollDirection";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";

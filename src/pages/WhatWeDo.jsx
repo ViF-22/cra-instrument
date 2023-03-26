@@ -4,13 +4,8 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { layout } from "../styles";
 import { styles } from "../styles";
-import { BsArrowRight } from "react-icons/bs";
-import {
-  threePics,
-  carousel,
-  points,
-  howWeWork,
-} from "../constants/whatWeDoConstants";
+
+import { threePics, points, howWeWork } from "../constants/whatWeDoConstants";
 import { Splide, SplideTrack, SplideSlide } from "@splidejs/react-splide";
 import SliderCarousel from "../components/SliderCarousel";
 import "@splidejs/react-splide/css";
@@ -34,10 +29,10 @@ export default function WhatWeDo() {
       </div>
       {/* h2 with btn */}
       <div
-        className={`${layout.headingWBtn} mt-[4rem] mb-[4rem] px-0 sm:px-[2.8rem] `}
+        className={`${layout.headingWBtn} my-[3rem] px-0 sm:px-[2.8rem] w-full`}
       >
         <h2
-          className={`ss:text-[2.2rem] sm:text-[2.7rem] md:text-[3.0rem] md:max-w-[75%] sm:max-w-[70%] sm:pt-[7rem] text-[1.9rem] max-w-[83%] mb-[2rem] text-center  font-semibold`}
+          className={`ss:text-[2.2rem] sm:text-[2.7rem] md:text-[3.0rem] md:max-w-[75%] sm:max-w-[70%] text-[1.9rem] max-w-[83%] mb-[2rem] text-center  font-semibold`}
         >
           We build connected brand systems for brands with purpose
         </h2>
@@ -87,31 +82,6 @@ export default function WhatWeDo() {
       {/* carousel  - THINK HOW TO ADD SUBTITLE*/}
 
       <Carousel />
-      {/* <Splide
-          hasTrack={false}
-          options={{
-            type: "fade",
-            rewind: true,
-            perPage: 1,
-            pagination: false,
-          }}
-        >
-          <div className="splide__arrows ">
-            <button className="splide__arrow splide__blackarrow rounded-full splide__arrow--prev py-2 px-2 sm:w-[3rem] sm:h-[3rem]">
-              <BsArrowRight />
-            </button>
-            <button className="splide__arrow splide__blackarrow splide__arrow--next rounded-full py-2 px-2 sm:w-[3rem] sm:h-[3rem]">
-              <BsArrowRight />
-            </button>
-          </div>
-          <SplideTrack>
-            {carousel.map((pic) => (
-              <SplideSlide key={pic.id} className="splide__slide sm:h-[90vh]  ">
-                <img src={pic.img} className="object-center" />
-              </SplideSlide>
-            ))}
-          </SplideTrack>
-        </Splide> */}
 
       {/* h2 */}
       <div
